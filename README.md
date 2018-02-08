@@ -1,2 +1,2 @@
-# ondata-tool-pivot-reverser
-A very simple web-based tool to reverse small pivot table: http://tools.ondata.it/pivot-reverser/.
+# ondata-tool-table-transposer
+A very simple web-based tool to transpose small table: http://tools.ondata.it/table-transposer/.

@@ -21,17 +21,14 @@ $(function() {
             output = [];
 
         _.each(input, function(line,ln) {
-            if (ln) {
-                _.each(line, function(field,fn) {
-                    if (fn) {
-                        output.push([
-                            line[0],
-                            input[0][fn],
-                            field
-                        ]);
-                    }
-                });
-            }
+            _.each(line, function(field,fn) {
+                if (fn && field) {
+                    output.push([
+                        line[0],
+                        field
+                    ]);
+                }
+            });
         });
 
         return output;
