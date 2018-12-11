@@ -8,10 +8,10 @@
         <title>Table Transposer by onData</title>
 
         <!-- Underscore -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha256-G7A4JrJjJlFqP0yamznwPjAApIKPkadeHfyIwiaa9e0=" crossorigin="anonymous"></script>
 
         <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,6 +35,9 @@
 
         <!-- Codice custom -->
         <link rel="stylesheet" href="table-transposer.css">
+        <link rel="stylesheet" href="css/statico.css">
+        <link rel="stylesheet" href="css/prima.css">
+        <link rel="stylesheet" href="css/dopo.css">
         <script src="table-transposer.js"></script>
 
     </head>
@@ -73,45 +76,50 @@
                 </div>
             </header>
 
-            <div class="container" style="padding-top: 110px;">
+            <!-- cambiare colore al container -->
+            <!-- bolle -->
+            <div class="prima bolle">
+                <div class="container" style="padding-top: 110px;">
 
-                <header style="text-align: center" ><h1>Table Transposer by onData</h1></header>
+                    <header style="text-align: center" class="CambioTestoBody">
+                        <h1>Table Transposer</h1>
+                    </header>
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-lg-6">
-                        <section>
+                        <div class="col-lg-offset-2 col-lg-8">
+                            <h3 class="CambioTestoBody">
+                                Incolla qui la tua tabella in Tab Separated Value, poi clicca su procedi per copiare la tua tabella...
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="svg/pesce.svg" class="left pesce">
+                        <div class="col-lg-offset-3 col-lg-6">
+                            <section>
                                 <div class="post-image">
                                     <div class="post-heading">
-                                        <h3>Incolla qui la tua tabella in Tab Separated Value...</h3>
                                         <p><textarea placeholder="a    1
 b    2    2
-c    3    1" class="jsboxin"  id="input"></textarea></p>
+c    3    1" class="jsboxin" id="input"></textarea></p>
                                     </div>
                                 </div>
-                        </section>
+                            </section>
+                            <!-- aggiungere qui sotto i due bottoni -->
+                            <div class="bottoni">
+                                <button type="button" class="btn btn-default" id="indietro">Indietro</button>
+                                <button type="button" class="btn btn-default" id="procedi">Procedi</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-6">
-                        <section>
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3>... e copia da qui la tua tabella invertita in Tab Separated Value.</h3>
-                                        <p><textarea placeholder="a    1
-b    2
-b    2
-c    3
-c    1" class="jsboxout" id="output"></textarea></p>
-                                    </div>
-                                </div>
-                        </section>
-                    </div>
-
-                    <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-offset-2 col-lg-8">
                         <h3>Riguardo questo strumento</h3>
                         <p>L'esigenza per questo strumento nasce dalla mancanza di uno modo semplice per risolvere un problema semplice. A volte le tabelle dei report si trovano in questa forma, così come nei portali. Sono human-readable, ma richiedono una trasformazione per essere realmente machine-readable. Per approfondire leggi <a href="https://www.facebook.com/groups/dataninja/permalink/1778394625799621/">questo scambio di battute</a>.</p>
                     </div>
-
                 </div>
 
             </div>
@@ -206,5 +214,7 @@ c    1" class="jsboxout" id="output"></textarea></p>
 
             </footer>
         </div>
+        <script src="js/onbuttonclick.js"></script>
+
     </body>
 </html>

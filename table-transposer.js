@@ -1,7 +1,8 @@
 $(function() {
 
     // Input and output textareas selection with jQuery
-    var $input = $("#input"),
+    var $btn = $("#procedi"),
+        $input = $("#input"),
         $output = $("#output");
 
     /* Input parsing, from string (tab separated values) to an array of arrays
@@ -75,11 +76,11 @@ $(function() {
     }
 
     // Trigger transformation pipeline on input textarea change
-    $input.change(function() {
-        $output.val(
+    $btn.click(function() {
+        $input.val(
             format(
                 transpose(
-                    parse($(this).val())
+                    parse($input.val())
                 )
             )
         );

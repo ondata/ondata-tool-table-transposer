@@ -1,0 +1,48 @@
+.btn{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+h3{
+	font-size: 18px;
+}
+
+.col-lg-3{
+	padding-left: 0px;
+}
+
+.copyright p{
+	text-align: center;
+}
+
+.credits{
+	text-align: center;
+}
+
+.wrapper{
+	background-color: white;
+}
+
+.bottoni{
+	text-align: center;
+}
+
+.pesce{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transition: 4s;
+	z-index: +1;
+}
+
+.left{
+	left: 0%;
+}
+
+.right{
+	left: 100%;
+}
+
+hr{
+	border-top: 1px solid #ccc;
+}

@@ -1,0 +1,53 @@
+.dopo h1{
+	color: white;
+}
+
+.dopo footer h5{
+	color: #111;
+}
+
+.dopo footer a{
+	color: #2e85d1;
+}
+
+.dopo #sub-footer{
+	background-color: white;
+}
+
+.dopo .copyright p{
+	color: #111;
+}
+
+.dopo .credits{
+	color: #111;
+}
+
+body.dopo {
+	background-color: #83b9e8;
+}
+
+.dopo .navbar{
+	background-color: white;
+}
+
+.dopo .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	color: #eb5a3d;
+}
+
+.dopo footer{
+	background-color: white;
+	color: #111;
+}
+
+.dopo .CambioTestoBody{
+	color: white;
+}
+
+.dopo a, a:hover, a:focus, a:active, footer a.text-link:hover, strike, .post-meta span a:hover, footer a.text-link, ul.meta-post li a:hover, ul.cat li a:hover, ul.recent li h6 a:hover, ul.portfolio-categ li.active a, ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover, ul.related-post li h4 a:hover, span.highlight, article .post-heading h3 a:hover, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav > .active > a:focus{
+	color: #ed6a52;
+}
+
+.dopo div.bolle{
+	background-image: url(../svg/bollebianche.svg);
+	background-size: cover;
+}
